@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d4a373;
+    color: #d4a373;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 8px;
+    background:#fefae0;
+    box-shadow: 0 0 10px rgba(240, 218, 218, 0.89);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+   
+h1 {
+    text-align: center;
+    color: #d4a373;
+}
+
+.todo-input {
+    display: flex;
+    gap: 10px;
+}
+
+.add-btn, .done-btn {
+    background-color: #6a994ed3;
+}
+
+.add-btn:hover, .done-btn:hover {
+    background-color: #6a994e;
+}
+
+.delete- {
+    background-color:#9e2a2cce ;
+}
+
+.delete-btn:hover {
+    background-color:#9e2a2b ;
+}
+
+input {
+    padding: 8px;
+    border: 1px solid #d4a373;
+    border-radius: 4px;
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    padding: 20px;
+}
+
+th {
+    padding: 15px;
+    background-color: #faedcd;
+}
+
+tbody tr {
+text-align: center;
+}
+
+tbody tr td {
+    padding:10px;
+}
+
+@media (max-width: 600px) {
+    table {
+        display:block;
+        overflow-x: auto;
+      }
+
+      .todo-input{
+        flex-direction: column;
+      }
+}
+
+@media (max-width: 910px){
+    .actions{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
